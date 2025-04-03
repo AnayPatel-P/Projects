@@ -1,28 +1,26 @@
 # 📊 AI Portfolio Optimizer
 
-An AI-powered portfolio optimization tool that helps users allocate assets based on modern portfolio theory (MPT). Built with **FastAPI**, **React**, and **PyPortfolioOpt**, this full-stack application allows users to select their risk level and receive an optimized allocation of US equities — along with expected return, volatility, and Sharpe ratio.
+An AI-powered portfolio optimization tool that helps users allocate assets based on Modern Portfolio Theory (MPT). Built with **FastAPI**, **React**, and **PyPortfolioOpt**, this full-stack application allows users to select a risk level and input any U.S. stock tickers to receive an optimized allocation — along with expected return, volatility, and Sharpe ratio.
 
 ---
 
-## 🧠 AI Portfolio Optimizer
+## 🌐 Live Demo + Repos
 
-A full-stack React + FastAPI application for AI-driven asset allocation.
-
-- 🌐 [Live Demo](https://ai-portfolio-frontend.netlify.app)
+- 🌍 [Live App](https://ai-portfolio-frontend.netlify.app)
 - 💻 [Frontend Repo](https://github.com/AnayPatel-P/ai-portfolio-frontend)
 - 🔌 [Backend Repo](https://github.com/AnayPatel-P/ai-portfolio-backend)
-
 
 ---
 
 ## 🚀 Features
 
 - 🎯 Select a risk level: Low, Medium, or High
-- 🧠 Backend computes optimized portfolio using PyPortfolioOpt
-- 📈 Returns expected return, volatility, and Sharpe ratio
+- ⌨️ Enter any valid U.S. stock tickers
+- 🧠 Backend computes optimal allocation using PyPortfolioOpt
+- 📈 Displays expected return, volatility, and Sharpe ratio
 - 📊 Portfolio weights calculated from real-time yFinance data
-- 🔌 Full-stack: React (frontend) + FastAPI (backend)
-- 🌍 Deployed on Netlify (frontend) and Render (backend)
+- 🔌 Full-stack architecture: React (frontend) + FastAPI (backend)
+- 🌍 Hosted on Netlify (frontend) and Render (backend)
 
 ---
 
@@ -39,10 +37,11 @@ A full-stack React + FastAPI application for AI-driven asset allocation.
 
 ## 🛠 How It Works
 
-1. User selects a risk level from the frontend
+1. User enters a comma-separated list of stock tickers and selects a risk level
 2. Frontend sends a POST request to `/optimize` on the backend
-3. Backend fetches US equity prices, computes portfolio weights via PyPortfolioOpt
-4. Result is sent back and displayed with stats & weights
+3. Backend fetches historical stock data from yFinance and computes optimized weights via PyPortfolioOpt
+4. The response includes optimized weights, expected return, volatility, and Sharpe ratio
+5. The frontend displays the results in a clean, responsive UI
 
 ---
 
@@ -69,10 +68,10 @@ AI-Portfolio-Optimizer/
 
 ## 🔮 Future Improvements
 
-- [ ] Allow custom ticker input
-- [ ] Add pie chart of weights
-- [ ] CSV / Excel / Power BI export
-- [ ] Persistent portfolio storage
+- [ ] Add pie/bar chart to visualize portfolio allocation
+- [ ] Export portfolio results as CSV / Excel
+- [ ] Integrate with Power BI dashboard
+- [ ] Store past optimizations with localStorage or backend DB
 
 ---
 
