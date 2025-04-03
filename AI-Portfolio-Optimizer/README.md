@@ -4,9 +4,14 @@ An AI-powered portfolio optimization tool that helps users allocate assets based
 
 ---
 
-## 🌐 Live Demo
+## 🧠 AI Portfolio Optimizer
 
-👉 [Try the App](https://ai-portfolio-frontend.netlify.app)
+A full-stack React + FastAPI application for AI-driven asset allocation.
+
+- 🌐 [Live Demo](https://ai-portfolio-frontend.netlify.app)
+- 💻 [Frontend Repo](https://github.com/AnayPatel-P/ai-portfolio-frontend)
+- 🔌 [Backend Repo](https://github.com/AnayPatel-P/ai-portfolio-backend)
+
 
 ---
 
