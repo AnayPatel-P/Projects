@@ -103,11 +103,6 @@ App runs at: [http://localhost:5173](http://localhost:5173)
 }
 ```
 
----
-
-## 📸 Screenshots
-
-> _Add screenshots here of the frontend UI and Swagger API once available._
 
 ---
 
