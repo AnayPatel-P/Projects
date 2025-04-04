@@ -19,6 +19,8 @@ An AI-powered portfolio optimization tool that helps users allocate assets based
 - 🧠 Backend computes optimal allocation using PyPortfolioOpt
 - 📈 Displays expected return, volatility, and Sharpe ratio
 - 📊 Portfolio weights calculated from real-time yFinance data
+- 📉 View historical price trends for selected tickers (line chart)
+- 📥 Export results as CSV for Power BI
 - 🔌 Full-stack architecture: React (frontend) + FastAPI (backend)
 - 🌍 Hosted on Netlify (frontend) and Render (backend)
 
@@ -28,7 +30,7 @@ An AI-powered portfolio optimization tool that helps users allocate assets based
 
 | Layer      | Technology                               |
 |------------|-------------------------------------------|
-| Frontend   | React, TailwindCSS, Axios, Vite           |
+| Frontend   | React, TailwindCSS, Axios, Vite, Recharts |
 | Backend    | FastAPI, PyPortfolioOpt, yFinance, Pandas |
 | API Format | REST (JSON)                               |
 | Deployment | Netlify (frontend) + Render (backend)     |
@@ -40,8 +42,14 @@ An AI-powered portfolio optimization tool that helps users allocate assets based
 1. User enters a comma-separated list of stock tickers and selects a risk level
 2. Frontend sends a POST request to `/optimize` on the backend
 3. Backend fetches historical stock data from yFinance and computes optimized weights via PyPortfolioOpt
-4. The response includes optimized weights, expected return, volatility, and Sharpe ratio
-5. The frontend displays the results in a clean, responsive UI
+4. The response includes:
+   - Optimized weights
+   - Expected return, volatility, Sharpe ratio
+   - Historical price series
+5. Frontend renders:
+   - Allocation weights
+   - Line chart of price history
+   - Downloadable CSV
 
 ---
 
@@ -68,10 +76,10 @@ AI-Portfolio-Optimizer/
 
 ## 🔮 Future Improvements
 
-- [ ] Add pie/bar chart to visualize portfolio allocation
-- [ ] Export portfolio results as CSV / Excel
-- [ ] Integrate with Power BI dashboard
-- [ ] Store past optimizations with localStorage or backend DB
+- [ ] Normalize chart data for comparison (% return vs raw price)
+- [ ] Add pie/bar chart to visualize allocation
+- [ ] Export results to Excel or connect live to Power BI
+- [ ] Save portfolio history using localStorage or backend
 
 ---
 
