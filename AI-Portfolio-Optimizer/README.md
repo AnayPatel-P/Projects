@@ -6,7 +6,7 @@ An AI-powered portfolio optimization tool that helps users allocate assets based
 
 ## 🌐 Live Demo + Repos
 
-- 🌍 [Live App](https://ai-portfolio-frontend.netlify.app)
+- 🌍 [Live App](celebrated-florentine-798645.netlify.app)
 - 💻 [Frontend Repo](https://github.com/AnayPatel-P/ai-portfolio-frontend)
 - 🔌 [Backend Repo](https://github.com/AnayPatel-P/ai-portfolio-backend)
 
