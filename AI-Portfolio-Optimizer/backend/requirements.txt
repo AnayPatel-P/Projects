@@ -3,3 +3,5 @@ uvicorn
 pandas
 yfinance
 PyPortfolioOpt
+python-dotenv
+cachetools
