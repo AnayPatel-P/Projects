@@ -1,19 +1,22 @@
 # 🧠 Projects Directory
 
-Welcome to the Projects directory of my GitHub! Here, you'll find a collection of applied AI/ML and data science projects that demonstrate my interests and capabilities in quantitative research, sports analytics, and explainable AI. Each subproject contains its own README, codebase, and documentation.
+Welcome to the Projects directory of my GitHub! Here, you'll find a collection of applied AI/ML and quantitative finance projects that demonstrate my interests and capabilities in quantitative research, portfolio optimization, sports analytics, and explainable AI. Each subproject contains its own README, codebase, and documentation.
 
 ---
 
-## 📊 [AI Portfolio Optimizer](./ai-portfolio-optimizer)
 
-A web-based application that allows users to input a custom list of tickers and receive:
+## 📊 [AI Portfolio Optimizer](./AI-Portfolio-Optimizer)
 
-* Optimized portfolio allocation using Modern Portfolio Theory (MPT)
-* Sharpe Ratio maximization
-* Visualizations of historical performance (normalized price charts)
-* Power BI integration for rich analytics dashboards
+A full-stack web application that provides professional-grade portfolio optimization using Modern Portfolio Theory. Features include:
 
-**Tech Stack:** Python, React, yFinance, Plotly, Power BI
+* **Advanced Portfolio Analytics:** Optimized allocation with risk metrics (VaR, Max Drawdown, Diversification Ratio)
+* **Interactive Visualizations:** Pie charts for allocation, normalized price performance charts
+* **Real-time Data Processing:** Live stock data via yFinance with TTL caching for performance
+* **Portfolio History:** Save and reload previous optimizations with localStorage persistence
+* **Export Capabilities:** CSV export for Power BI and Excel integration
+* **Professional UI/UX:** Real-time validation, loading states, error handling
+
+**Tech Stack:** FastAPI, React, PyPortfolioOpt, TailwindCSS, Recharts, yFinance
 
 ---
 
@@ -44,12 +47,12 @@ An interpretable ML framework that helps visualize and explain model predictions
 
 ## 💡 [Stock Recommender](./Stock_Recommender)
 
-An end-to-end risk-aware stock recommendation system for S\&P 500 equities:
+An end-to-end risk-aware stock recommendation system for S&P 500 equities:
 
-* **Data Ingestion:** Scrapes S\&P 500 tickers and downloads 5 years of historical prices via yfinance
+* **Data Ingestion:** Scrapes S&P 500 tickers and downloads 5 years of historical prices via yfinance
 * **Feature Engineering:** Computes daily returns, annualized volatility, momentum, and rolling Sharpe ratios
 * **Modeling:** Trains a two-headed TensorFlow neural network to predict next-month return and volatility
-* **Inference UI:** Streamlit app allowing users to select a risk preference (α ∈ \[0,1]) and view top N stock picks
+* **Inference UI:** Streamlit app allowing users to select a risk preference (α ∈ [0,1]) and view top N stock picks
 * **Backtesting:** Monthly rebalance evaluation measuring realized returns & volatility over a 21-day horizon
 * **Containerization:** Docker support for easy deployment
 
@@ -57,6 +60,33 @@ An end-to-end risk-aware stock recommendation system for S\&P 500 equities:
 
 ---
 
-Each project is built with a strong emphasis on clarity, reproducibility, and real-world relevance. Feel free to explore and reach out if you’d like to collaborate or discuss ideas!
+## 🎯 Project Highlights
+
+### **Quantitative Finance & Portfolio Management**
+- **AI Portfolio Optimizer**: Modern Portfolio Theory implementation with advanced analytics and interactive optimization
+- **Stock Recommender**: Neural network-based stock selection with risk management and backtesting
+
+### **Machine Learning & AI**
+- **Explainable AI Platform**: Model interpretability using SHAP/LIME techniques
+- **College Football Predictor**: Sports analytics with ranking prediction models
+
+### **Technical Capabilities**
+- **Full-Stack Development**: FastAPI backends with React frontends, professional UI/UX
+- **Production Systems**: Docker deployment, comprehensive testing, enterprise configuration
+- **Interactive Dashboards**: Streamlit and React-based user interfaces with real-time data
+- **Advanced Analytics**: Risk metrics, portfolio optimization, performance attribution, statistical analysis
+- **Data Engineering**: Multi-source data ingestion, caching, processing, and validation
+
+### **Key Technical Skills Demonstrated**
+- **Python Ecosystem**: Pandas, NumPy, Scikit-learn, TensorFlow, FastAPI, Streamlit
+- **Frontend Development**: React, TailwindCSS, Recharts, responsive design
+- **Financial Engineering**: Portfolio optimization, risk management, Modern Portfolio Theory
+- **Data Visualization**: Interactive charts, real-time dashboards, performance analytics
+- **Software Engineering**: Full-stack development, API design, testing frameworks, configuration management
+- **Machine Learning**: Supervised learning, model interpretation, feature engineering
+
+---
+
+Each project is built with a strong emphasis on clarity, reproducibility, and real-world relevance. The projects range from educational implementations to production-ready systems suitable for commercial use. Feel free to explore and reach out if you'd like to collaborate or discuss ideas!
 
 — Anay Patel

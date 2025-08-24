@@ -1,0 +1,34 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip install:*)",
+      "Bash(python:*)",
+      "Bash(touch:*)",
+      "Bash(mkdir:*)",
+      "Bash(cp:*)",
+      "Bash(streamlit run:*)",
+      "Bash(rm:*)",
+      "Bash(find:*)",
+      "Bash(mv:*)",
+      "Bash(git branch:*)",
+      "Bash(git push:*)",
+      "Bash(git pull:*)",
+      "Bash(git config:*)",
+      "Bash(git merge:*)",
+      "Bash(git clone:*)",
+      "Bash(ls:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git rm:*)",
+      "Bash(git stash:*)",
+      "Bash(curl:*)",
+      "Bash(node:*)",
+      "Bash(npm:*)",
+      "Bash(chmod:*)",
+      "Bash(./start.sh:*)",
+      "Bash(pkill:*)",
+      "WebFetch(domain:docs.anthropic.com)"
+    ],
+    "deny": []
+  }
+}
